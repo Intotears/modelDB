@@ -3,22 +3,22 @@ module.exports = (sequelize, Sequelize) => {
     "user",
     {
       userID: {
-        type: Sequelize.STRING(255),
+        type: Sequelize.UUID,
+        defaultValue: Sequelize.UUIDV4,
         primaryKey: true,
         allowNull: false,
-        
       },
-      userName: {
+      Name: {
         type: Sequelize.STRING(255),
         allowNull: false,
       },
-      userUsername: {
+      username: {
         type: Sequelize.STRING(255),
         allowNull: false,
         unique: true,
       },
       userEmail: {
-        type: Sequelize.TEXT,
+        type: Sequelize.STRING(255),
         allowNull: false,
         unique: true,
       },

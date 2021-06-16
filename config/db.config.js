@@ -15,7 +15,7 @@ db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
 //Models
-db.admin = require("../model/admin.model.js")(sequelize, Sequelize);
+// db.admin = require("../model/admin.model.js")(sequelize, Sequelize);
 db.user = require("../model/user.model.js")(sequelize, Sequelize);
 
 db.recipe = require("../model/recipe.model.js")(sequelize, Sequelize);
