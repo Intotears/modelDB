@@ -6,7 +6,7 @@ module.exports = (sequelize, Sequelize) => {
         type: Sequelize.INTEGER,
         primaryKey: true,
         allowNull: false,
-        
+        autoIncrement: true
       },
       recipeName: {
         type: Sequelize.STRING(255),

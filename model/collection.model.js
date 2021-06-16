@@ -8,10 +8,6 @@ module.exports = (sequelize, Sequelize) => {
           allowNull: false,
           
         },
-        collectionName: {
-          type: Sequelize.STRING(255),
-          allowNull: false,
-        },
       },
       {
         timestamps: false,

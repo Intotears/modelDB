@@ -8,19 +8,19 @@ module.exports = (sequelize, Sequelize) => {
         primaryKey: true,
         allowNull: false,
       },
-      Name: {
+      name: {
         type: Sequelize.STRING(255),
         allowNull: false,
       },
       username: {
         type: Sequelize.STRING(255),
         allowNull: false,
-        unique: true,
+        unique: "username_uk",
       },
       userEmail: {
         type: Sequelize.STRING(255),
         allowNull: false,
-        unique: true,
+        unique: "userEmail_uk",
       },
       userPassword: {
         type: Sequelize.STRING(255),
@@ -30,7 +30,8 @@ module.exports = (sequelize, Sequelize) => {
     {
       timestamps: false,
       freezeTableName: true,
-    }
+      
+  }
   );
 
   return User;

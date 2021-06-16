@@ -4,7 +4,7 @@ const User = db.user;
 // Post a Book
 exports.create = (req, res) => {
   User.create({
-    Name: req.body.Name,
+    name: req.body.name,
     username: req.body.username,
     userEmail: req.body.userEmail,
     userPassword: req.body.userPassword,

@@ -6,7 +6,6 @@ module.exports = (sequelize, Sequelize) => {
           type: Sequelize.STRING(255),
           primaryKey: true,
           allowNull: false,
-          
         },
         adminName: {
           type: Sequelize.STRING(255),
@@ -15,7 +14,7 @@ module.exports = (sequelize, Sequelize) => {
         adminUsername: {
           type: Sequelize.STRING(255),
           allowNull: false,
-          unique: true,
+          
         },
         adminPassword: {
           type: Sequelize.STRING(255),

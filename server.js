@@ -6,7 +6,7 @@ app.use(bodyParser.json());
 // include database config file
 const db = require("./config/db.config.js");
 
-db.sequelize.sync({ force: true }).then(() => {
+db.sequelize.sync({ alter: true }).then(() => {
   console.log("Drop and Resync with { alter: true }");
 });
 
