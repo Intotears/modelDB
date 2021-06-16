@@ -9,14 +9,14 @@ module.exports = (sequelize, Sequelize) => {
         
       },
       recipeName: {
-        type: Sequelize.STRING(20),
+        type: Sequelize.STRING(255),
         allowNull: false,
       },
       description: {
-        type: Sequelize.STRING(200),
+        type: Sequelize.STRING(255),
       },
       time: {
-        type: Sequelize.STRING(10),
+        type: Sequelize.STRING(255),
       },
       shareOption: {
         type: Sequelize.BOOLEAN,

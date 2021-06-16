@@ -9,7 +9,7 @@ module.exports = (sequelize, Sequelize) => {
           
         },
         collectionName: {
-          type: Sequelize.STRING(100),
+          type: Sequelize.STRING(255),
           allowNull: false,
         },
       },

@@ -11,7 +11,7 @@ db.sequelize.sync({ alter: true }).then(() => {
 });
 
 // include application routes
-require("./route/book.route.js")(app);
+require("./route/recipe.route.js")(app);
 // Create & Listen Server
 var server = app.listen(8081, function () {
   var host = server.address().address;

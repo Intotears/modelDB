@@ -3,7 +3,7 @@ module.exports = (sequelize, Sequelize) => {
     "calories",
     {
       calorieID: {
-        type: Sequelize.STRING(10),
+        type: Sequelize.STRING(255),
         primaryKey: true,
         allowNull: false,
         

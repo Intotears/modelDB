@@ -9,7 +9,7 @@ module.exports = (sequelize, Sequelize) => {
         
       },
       additionalIngreName: {
-        type: Sequelize.STRING(50),
+        type: Sequelize.STRING(255),
         allowNull: false,
       },
       additionalIngreQuantity: {

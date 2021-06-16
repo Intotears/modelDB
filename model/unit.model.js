@@ -3,13 +3,13 @@ module.exports = (sequelize, Sequelize) => {
       "unit",
       {
           unitID: {
-          type: Sequelize.STRING(10),
+          type: Sequelize.STRING(255),
           primaryKey: true,
           allowNull: false,
           
         },
         unitName: {
-          type: Sequelize.STRING(100),
+          type: Sequelize.STRING(255),
           allowNull: false,
         },
       },

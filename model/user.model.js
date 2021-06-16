@@ -3,17 +3,17 @@ module.exports = (sequelize, Sequelize) => {
     "user",
     {
       userID: {
-        type: Sequelize.STRING(10),
+        type: Sequelize.STRING(255),
         primaryKey: true,
         allowNull: false,
         
       },
       userName: {
-        type: Sequelize.STRING(50),
+        type: Sequelize.STRING(255),
         allowNull: false,
       },
       userUsername: {
-        type: Sequelize.STRING(50),
+        type: Sequelize.STRING(255),
         allowNull: false,
         unique: true,
       },
@@ -23,7 +23,7 @@ module.exports = (sequelize, Sequelize) => {
         unique: true,
       },
       userPassword: {
-        type: Sequelize.STRING(50),
+        type: Sequelize.STRING(255),
         allowNull: false,
       },
     },

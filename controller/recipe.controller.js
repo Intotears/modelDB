@@ -1,13 +1,14 @@
 const db = require("../config/db.config.js");
-const Recipe = db.recipes;
+const Recipe = db.recipe;
 
 // Post a Book
 exports.create = (req, res) => {
   Recipe.create({
-    // rep_id: req.body.recipeID,
-    recipename : req.body.recipeName,
+    // recipeID: req.body.recipeID,
+    recipeName : req.body.recipeName,
     description: req.body.description,
-    cooking_time: req.body.cooking_time,
+    time: req.body.time,
+    shareOption: req.body.shareOption,
     serveNumber: req.body.serveNumber,
   }).then((recipe) => {
     res.status(200).json({
